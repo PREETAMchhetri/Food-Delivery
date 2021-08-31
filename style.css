@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    top: 0px;
+    
+    
+       
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.logo img{
+    height: 70px;
+    width: 90px;
+}
+
+
+.navItems{
+    display: flex;
+    list-style: none;
+    margin-right: auto;
+    margin: 0px 0px;
+}
+
+.navItems li a{
+    text-decoration: none;
+    padding:12px;
+    font-size: 20px;
+    color: white;
+}
+.navItems li a:hover{
+    color:rgb(56, 54, 75);
+}
+
+
+
+/* HOME SECTION */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    margin-bottom: 100px;
+    
+}
+.home::before{
+    content: "";
+    background: url("images/home.jpg") no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:356px;
+    width: 100%;
+    opacity:0.89;
+
+}
+.home h2{
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgb(255 31 31);
+    padding: 12px;
+}
+.home p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(243 187 187);
+    font-size: 1rem;
+    padding: 3px;
+}
+.home button{
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    margin: 3px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border-color: rgb(70, 64, 64);
+    background-color: rgb(12, 11, 11);
+    color: white;
+    
+}
+
+/* SERVICE SECTION  */
+#service{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.service-container h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+#service img{
+    height:100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    
+}
+.foodSection{
+    border:2px solid brown;
+    padding: 10px 24px;
+    margin: 3px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    
+}
+
+/* CLIENT SECTION  */
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+}
+#Client{
+    margin: 6px 6px;
+    position: relative;
+}
+#Client h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+#Client::before{
+    content:"";
+    background:url("images/clients.jpg") no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    position: absolute;
+}
+.client img{
+    height:150px;
+    width: 200px;
+    padding: 15px;
+}
+
+/* SIGN UP SECTION  */
+.form h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 41px;
+    margin-bottom: 3%;
+}
+.form{
+    position: relative;
+    height:350px;
+    
+}
+.form::before{
+    content:"";
+    background:url("images/message.jpg") no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    position: absolute;
+}
+#form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+}
+.form-input{
+    padding: 8px;
+    width: 100%;
+}
+.form-input input{
+    /* width:80%; */
+    padding-inline-end: 120px;
+    padding-bottom: 11px;
+}
+.form-input label{
+    padding-right: 11px;
+}
+.copy{
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+}
